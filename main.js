@@ -1,4 +1,9 @@
 function select(sender) {
     // console.log(sender);
-    sender.classList.add('selected');
+    // debugger;
+    if (!sender.classList.contains('selected')) {
+        sender.classList.add('selected');
+    } else {
+        sender.classList.remove('selected');
+    }
 }
